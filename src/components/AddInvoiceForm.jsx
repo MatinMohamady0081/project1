@@ -7,7 +7,7 @@ const { Option } = Select;
 const AddInvoiceForm = () => {
     return (
         <Form layout="vertical">
-            {/* Row 1 */}
+            
             <div style={{ display: 'flex', gap: '16px' }}>
                 <Form.Item label="شماره فاکتور" required>
                     <Input placeholder="شماره فاکتور" />
@@ -19,7 +19,7 @@ const AddInvoiceForm = () => {
                     <Select defaultValue="ریال">
                         <Option value="ریال">ریال</Option>
                         <Option value="دلار">دلار</Option>
-                        {/* Add other currency options if needed */}
+
                     </Select>
                 </Form.Item>
                 <Form.Item label="شماره سند">
@@ -30,11 +30,11 @@ const AddInvoiceForm = () => {
                 </Form.Item>
             </div>
 
-            {/* Row 2 */}
+
             <div style={{ display: 'flex', gap: '16px' }}>
                 <Form.Item label="خریدار" required>
                     <Select placeholder="لطفا انتخاب کنید">
-                        {/* Add buyer options here */}
+                        
                     </Select>
                 </Form.Item>
                 <Form.Item label="حساب بستانکار" required>
@@ -57,18 +57,18 @@ const AddInvoiceForm = () => {
                 </Form.Item>
             </div>
 
-            {/* Row 3 - Notes */}
+            
             <Form.Item label="توضیحات">
                 <Input.TextArea rows={2} placeholder="توضیحات" />
             </Form.Item>
 
-            {/* Add Product Button */}
+            
             <Button type="primary" icon={<PlusOutlined />}>افزودن محصول</Button>
 
-            {/* Table for products */}
+
             <AddInvoiceTable />
 
-            {/* Discount Row */}
+            
             <div style={{ display: 'flex', gap: '16px', marginTop: '16px' }}>
                 <Form.Item label="نوع تخفیف">
                     <Select defaultValue="%">
@@ -87,7 +87,7 @@ const AddInvoiceForm = () => {
                 </Form.Item>
             </div>
 
-            {/* Payment Method Row */}
+            
             <div style={{ display: 'flex', gap: '16px' }}>
                 <Form.Item label="نحوه پرداخت">
                     <Select defaultValue="نقدی">
@@ -103,7 +103,7 @@ const AddInvoiceForm = () => {
                 </Form.Item>
             </div>
 
-            {/* Submit and Cancel Buttons */}
+            
             <div style={{ display: 'flex', gap: '8px', justifyContent: 'flex-end', marginTop: '16px' }}>
                 <Button type="primary" htmlType="submit">ایجاد</Button>
                 <Button>لغو</Button>

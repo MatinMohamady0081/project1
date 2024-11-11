@@ -22,7 +22,7 @@ const AddInvoiceTable = () => {
     return (
         <Table
             columns={columns}
-            dataSource={[]} // Add data here if available
+            dataSource={[]}
             pagination={false}
             bordered
         />
